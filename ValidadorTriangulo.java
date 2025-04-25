@@ -23,6 +23,14 @@ public static void main(String[] args) {
     if((a < (b+c)) && (b < (a+c)) && (c < (a+b))){
         //É triângulo
         System.out.printf("\n%d, %d e %d formam triângulo!\n", a, b, c);
+
+        if((a == b) || (b == c)){
+            System.out.println("Triângulo Equilátero!");
+        } else if((a == b) || (b == c) || (a == c)){
+            System.out.println("Triângulo Isóceles!");
+        } else {
+            System.out.println("Triângulo Escaleno!");
+        }
     } else {
         //Não é triângulo
         System.out.printf("\n%d, %d e %d NÃO formam triângulo!\n", a, b, c);
